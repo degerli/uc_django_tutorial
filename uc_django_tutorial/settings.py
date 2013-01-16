@@ -153,3 +153,11 @@ LOGGING = {
         },
     }
 }
+
+UPLOADCARE = {
+
+    # Don't forget to change to real keys when it gets serious!
+
+    'pub_key': 'demopublickey',
+    'secret': 'demoprivatekey',
+}
