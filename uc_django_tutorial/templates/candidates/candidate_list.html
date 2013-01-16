@@ -1,16 +1,12 @@
- <!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Candidate List: Uploadcare Django Tutorial</title>
-    </head>
-    <body>
-        <ul>
-            {% for candidate in object_list %}
-                <li>
-                    {{ candidate }}
+{% block title %}Candidate List{% endblock %}
 
-                </li>
-            {% endfor %}
-        </ul>
-    </body>
-</html>
+{% block content %}
+<ul>
+    {% for candidate in object_list %}
+        <li>
+            {{ candidate }}
+
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
