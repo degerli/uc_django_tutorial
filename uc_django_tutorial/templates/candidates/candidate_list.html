@@ -1,11 +1,9 @@
-{% block title %}Candidate List{% endblock %}
-
 {% block content %}
 <ul>
     {% for candidate in object_list %}
         <li>
             <a href="{% url candidate-update pk=candidate.pk %}">
-                {{ candidate }}
+                {{ candidate }}{% if candidate.resume %}, with resume{% endif %}
             </a>
         </li>
     {% endfor %}
