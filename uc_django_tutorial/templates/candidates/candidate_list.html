@@ -1,0 +1,16 @@
+ <!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Candidate List: Uploadcare Django Tutorial</title>
+    </head>
+    <body>
+        <ul>
+            {% for candidate in object_list %}
+                <li>
+                    {{ candidate }}
+
+                </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
